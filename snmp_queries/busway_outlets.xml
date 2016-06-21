@@ -1,0 +1,52 @@
+<busway_outlets>
+	<name>Get Busway Outlets</name>
+	<description>Queries a Starline CPM for a list of monitorable outlets</description>
+	<oid_index>.1.3.6.1.4.1.35774.2.1.7.1.1</oid_index>
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<outletIndex>
+			<name>Index</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.35774.2.1.7.1.1</oid>
+		</outletIndex>
+		<outletId>
+			<name>Description</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.35774.2.1.7.1.2</oid>
+		</outletId>
+		<outletLineCurrentRating>
+			<name>Line Current Rating</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.35774.2.1.7.1.3</oid>
+		</outletLineCurrentRating>
+		<outletTotalActivePower>
+			<name>Total Active Power</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.35774.2.1.7.1.5</oid>
+		</outletTotalActivePower>
+		<outletPeakTotalActivePower>
+			<name>Peak Total Active Power</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.35774.2.1.7.1.6</oid>
+		</outletPeakTotalActivePower>
+		<outletCurrentMaxAlarm>
+			<name>High Output Threshold</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.35774.2.1.7.1.12</oid>
+		</outletCurrentMaxAlarm>
+	</fields>
+</busway_outlets>
